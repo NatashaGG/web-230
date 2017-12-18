@@ -1,5 +1,5 @@
 var header = require('../header.js'); 
-var headerMsg = header.display("Natasha", "Colletta", "Exercise 2.4");
+var headerMsg = header.display("Natasha", "Colletta", "Exercise 3.2");
 console.log(headerMsg);
 // start program
 
