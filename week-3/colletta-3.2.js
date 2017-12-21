@@ -21,25 +21,25 @@ console.log(headerMsg);
 */ 
 
 // functions 
+// Changed match to reflect boolean not strings
 function match(a,b) {
     if (a == b) {
-        return "true";
+        return true;
     } else {
-        return "false";
+        return false;
     }
 } 
-
+function logMatch(e,f) {
+    if (e==f) {
+        console.log(e + " and " + f + " do match!");
+    }
+}
 function logMismatch(c,d) {
     if (c!=d) {
         console.log(c + " and " + d + " do not match!");
     }
 }
 
-function logMatch(e,f) {
-    if (e==f) {
-        console.log(e + " and " + f + " do match!");
-    }
-}
 
 // six (6) test variables 
 var Truck = "Truck";
@@ -57,21 +57,21 @@ console.log(match(2, 2));
 console.log("\n");
 
 // Conditional "if...else" statements. Include checks for all six (6) test variables 
-if (Truck==Car) {
-    logMatch();
-} else {
+// replaced if clauses with match function per feedback
+if(match(Truck,Car))
+    logMatch(Truck,Car);
+else
     logMismatch(Truck,Car);
-}
-if (Bike1==Bike2) {
+
+if(match(Bike1,Bike2))
     logMatch(Bike1,Bike2);
-} else {
-    logMismatch();
-}
-if (Four==Three) {
-    logMatch();
-} else {
+else
+    logMismatch(Bike1,Bike2);
+
+if(match(Four,Three))
+    logMatch(Four,Three);
+else
     logMismatch(Four,Three);
-}
 
 
 // end program 

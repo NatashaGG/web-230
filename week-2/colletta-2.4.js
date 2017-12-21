@@ -53,13 +53,17 @@ function formatNumber(temp) {
 }
 
 function convertToInt(age) {
-    String(age);
-    return age;
+    // my answer: String(age);
+    // return age;
+    // What it should have been:
+    return parseInt(age);
 }
 
 function convertToFloat(savings) {
-    String(savings)
-    return savings;
+    // my answer: String(savings)
+    // return savings;
+    // What it should have been:
+    return parseFloat(savings);
 }
 
 // output

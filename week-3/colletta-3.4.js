@@ -40,38 +40,48 @@ var num = 6;
 
 
 // for loop
+// added comments/code from feedback
+var rnd1;
 console.log("-- Displaying for loop --");
-for (var x = 0; x < 10; x++){
-    if (num==randomNumber()){
-        logMatch(num, randomNumber())
+for (var x=0; x<10; x++){
+    rnd1 = randomNumber();
+
+    if (match(num, rnd1)){
+        logMatch(num, rnd1);
     }
     else {
-        logMismatch(num, randomNumber())
+        logMismatch(num, rnd1);
     }
 }
 
 
 
 // while loop
-console.log("\n-- Displaying while loop --"); 
-while (num < 10) {
-    if (num==randomNumber()){
-        logMatch(num, randomNumber())
+// Added comments from feedback
+console.log("\n-- Displaying while loop --");
+var index = 0;
+var rnd2; 
+while (index < 10) { //here is where we compare the index value to the number of iterations we want
+    rnd2 = randomNumber();
+    if (match(num,rnd2)){
+        logMatch(num,rnd2);
     }
     else {
-        logMismatch(num, randomNumber())
+        logMismatch(num,rnd2);
     }
-    num++;
+
+    index++; //here is where we increase the index value
 }
 
 
 
 // Reused functions from exercise-3.2.js
+// Made changes per feedback
 function match(a,b) {
     if (a == b) {
-        return "true";
+        return true;
     } else {
-        return "false";
+        return false;
     }
 } 
 
