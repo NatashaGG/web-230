@@ -36,12 +36,13 @@ var Fruits = ["Apple", "Orange", "Banana", "Mango", "Pear"];
 // Create a function named getFruit that accepts as an argument a one-dimensional array and outputs the results in a well formatted structure
 function getFruit() {
     for (var f =0; f < Fruits.length; f++) {
-        console.log(Fruits[f]);
+        console.log(Fruits[f]); // Call the getFruit function using the one-dimensional array created in step one
     }
 }
 
 
 // Output from the getFruit() function
+// Output the results
 getFruit(Fruits);
 
 
