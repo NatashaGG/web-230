@@ -1,11 +1,12 @@
 /*
-==========================================
-Title: Exercise 2.3
-Author: Professor Krasso
-Date: December 6, 2017
-Modified By: Natasha Colletta
-Description: Function property to return header and hello message.
-======================================
+=========================================
+; Title: Exercise 2.3
+; Author: Professor Krasso
+; Date: December 6, 2017
+; Modified By: Natasha Colletta
+; Description: Function property to return
+; header and hello message.
+=========================================
 */
 
 var header = require('../header.js'); 

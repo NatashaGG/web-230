@@ -1,3 +1,14 @@
+/*
+============================================
+; Title: Assignment 1.4
+; Author: Professor Krasso
+; Date: 21 December 2017
+; Modified By: Natasha Colletta
+; Description: This program demonstrates the
+; use of creating variables and outputting 
+; them.
+;===========================================
+*/ 
 // start program
 
 /*

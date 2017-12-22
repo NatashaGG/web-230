@@ -1,3 +1,13 @@
+/*
+============================================
+; Title: Assignment 3.4
+; Author: Professor Krasso
+; Date: 21 December 2017
+; Modified By: Natasha Colletta
+; Description: This program demonstrates the
+; use of for and while statements.
+;===========================================
+*/ 
 var header = require('../header.js'); 
 var headerMsg = header.display("Natasha", "Colletta", "Assignment 3.4");
 console.log(headerMsg + "\n");

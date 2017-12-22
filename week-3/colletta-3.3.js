@@ -1,4 +1,14 @@
-var header = require('../header.js'); 
+/*
+============================================
+; Title: Assignment 3.3
+; Author: Professor Krasso
+; Date: 21 December 2017
+; Modified By: Natasha Colletta
+; Description: This program demonstrates the
+; use of switch statements.
+============================================
+*/ 
+ar header = require('../header.js'); 
 var headerMsg = header.display("Natasha", "Colletta", "Exercise 3.3");
 console.log(headerMsg + "\n");
 // start program

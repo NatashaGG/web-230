@@ -1,3 +1,14 @@
+/*
+============================================
+; Title: Assignment 3.2
+; Author: Professor Krasso
+; Date: 21 December 2017
+; Modified By: Natasha Colletta
+; Description: This program demonstrates
+; the use of functions to return boolean 
+; responses.
+;===========================================
+*/ 
 var header = require('../header.js'); 
 var headerMsg = header.display("Natasha", "Colletta", "Exercise 3.2");
 console.log(headerMsg);

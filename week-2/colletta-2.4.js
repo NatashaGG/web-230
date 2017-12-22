@@ -1,11 +1,11 @@
 /*
 ==========================================
-Title: Exercise 2.4
-Author: Professor Krasso
-Date: December 6, 2017
-Modified By: Natasha Colletta
-Description: Creating multiple functions
-======================================
+; Title: Exercise 2.4
+; Author: Professor Krasso
+; Date: December 6, 2017
+; Modified By: Natasha Colletta
+; Description: Creating multiple functions
+==========================================
 */
 var header = require('../header.js'); 
 var headerMsg = header.display("Natasha", "Colletta", "Exercise 2.4");
