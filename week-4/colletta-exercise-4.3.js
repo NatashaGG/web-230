@@ -38,14 +38,13 @@ console.log(headerMsg + "\n");
 // start program
 // Create a one-dimensional array with 5 vehicles
 var arr = ["Car", "Truck", "Motorcycle", "Airplane", "Bus"];
-var val;
 
 // function
 // Create a function called getValue that accepts two arguments: a one-dimensional array and a value to filter against
 function getValue(arr, val) {
     for (var v = 0; v < arr.length; v++) {
         if (arr[v] == val) {
-            return arr[v]
+            return arr[v];
         }
     }
 }
