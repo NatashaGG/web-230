@@ -55,7 +55,6 @@ function getValue(states, val) {
 
 sortedStates = states.sort();
 
-
 // Output
 // Display the original unsorted array
 console.log("-- ORIGINAL ARRAY --");
@@ -71,7 +70,6 @@ console.log("\n");
 
 // invoke the filter() method using the getValue function and output the results
 console.log("-- SELECTED VALUE --");
-console.log(getValue(states, "Iowa"));
-
-
+filteredState = states.filter(oneState => oneState.length == 4);
+console.log(filteredState.toString());
 // end program
