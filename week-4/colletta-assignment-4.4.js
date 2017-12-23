@@ -53,8 +53,6 @@ function getValue(states, val) {
     }
 }
 
-sortedStates = states.sort();
-
 // Output
 // Display the original unsorted array
 console.log("-- ORIGINAL ARRAY --");
@@ -64,8 +62,11 @@ for (var f = 0; f < states.length; f++) {
 console.log("\n");
 
 // Sort and display the array
+sortedStates = states.sort();
 console.log("-- SORTED ARRAY --");
-console.log(sortedStates.toString());
+for (var u = 0; u < states.length; u++) {
+    console.log(states[u]);
+}
 console.log("\n");
 
 // invoke the filter() method using the getValue function and output the results
