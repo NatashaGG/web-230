@@ -63,7 +63,7 @@ var famousComposers = [
         genre:'Classical',
         rating:'5',
     },
-]
+];
 
 // Iterate over the Array-Like Object using the built-in forEach() method and output the results
 famousComposers.forEach(function(music) {
