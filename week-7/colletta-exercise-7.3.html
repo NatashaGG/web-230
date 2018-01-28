@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link href="../site.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Exercise 7.3</title>
+
+        <link rel="stylesheet" href="../site.css">
     </head>
     <body>
-        <h1>SHOPPING LIST v.1</h1>
-        <ol>
+        <div id="list"></div>
+        
         <script>
-            document.write(
-            "<li>Oranges</li>" +
-            "<li>Apples</li>" +
-            "<li>Pears</li>" +
-            "<li>Limes</li>" +
-            "<li>Lemons</li>"
-            );
-        </script>
-        </ol>
+            document.write("<h1>SHOPPING LIST v.1</h1>");
+            document.write("<ol>");
+            document.write("<li>Oranges</li>" + "<li>Apples</li>" + "<li>Pears</li>" + "<li>Limes</li>" + "<li>Lemons</li>");
+            document.write("</ol>");
+        </script> 
+        
         <h1>SHOPPING LIST v.2</h1>
-        <table id="shoppingList"> </table>
+        <table id="shoppingList"></table>
+
         <script>
-            document.getElementById("shoppingList").innerHTML =
+        document.getElementById("shoppingList").innerHTML =
             "<thead>" + 
                 "<tr>" +
                 "<th>Id</th>" + "<th>Item</th>" +
