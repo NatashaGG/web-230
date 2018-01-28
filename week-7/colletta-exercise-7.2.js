@@ -26,6 +26,7 @@ console.log(headerMsg + "\n");
  */
 
 // start program
+//Create an employee constructor object with four parameters/fields
 function employeeInfo(id, firstName, lastName, title)
 {
     this.id = id;
@@ -35,7 +36,7 @@ function employeeInfo(id, firstName, lastName, title)
 }
 
 var employees = [];
-// Create employee items
+// Populate an array with 5 employee items
 employees[0] = new employeeInfo(1, "Thomas", "Edison", "Software Engineer");
 employees[1] = new employeeInfo(2, "Benjamin", "Franklin", "Programmer");
 employees[2] = new employeeInfo(3, "Nikola", "Tesla", "Project Manager");
@@ -45,7 +46,7 @@ employees[4] = new employeeInfo(5, "Alexander", "Bell", "Business Analyst");
 for (var k = 0; k <employees.length; k++)
 {
     var emp = employees[k];
-
+// Iterate over the array and output the results
     console.log(emp.id + " " + emp.firstName + " " + emp.lastName + " "  + emp.title);
 }
 // end program
