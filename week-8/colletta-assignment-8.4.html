@@ -31,22 +31,22 @@
     }
 
     // employee array
-    var employees = [];
-    
-    employees[0] = new employeeInfo(1, "Thomas", "Edison", "Software Engineer");
-    employees[1] = new employeeInfo(2, "Benjamin", "Franklin", "Programmer");
-    employees[2] = new employeeInfo(3, "Nikola", "Tesla", "Project Manager");
-    employees[3] = new employeeInfo(4, "Charles", "Babbage", "Product Manager");
-    employees[4] = new employeeInfo(5, "Alexander", "Bell", "Business Analyst");
+    var employees = [   
+        new employeeInfo(1, "Thomas", "Edison", "Software Engineer"),
+        new employeeInfo(2, "Benjamin", "Franklin", "Programmer"),
+        new employeeInfo(3, "Nikola", "Tesla", "Project Manager"),
+        new employeeInfo(4, "Charles", "Babbage", "Product Manager"),
+        new employeeInfo(5, "Alexander", "Bell", "Business Analyst")
+        ];
 
-    // getEmployee(id) function
+     // getEmployee(id) function
     function getEmployee(id) {
-        var idf = "";
-        employeeA.forEach( function(c, i, a) {
+        var result = "";
+        employees.forEach( function(c, i, a) {
             if (a[i].id == id) {
-                idf = a[i];
+                result = a[i];
             }});
-            return (idf.id + " " + idf.firstName + " " + idf.lastName + " " + idf.title);
+            return (result.id + " " + result.firstName + " " + result.lastName + " " + result.title);
     }
 
     // output string variable
@@ -56,12 +56,12 @@
         output += "<tbody>";
 
     // for loop
-    for (var i = 0; i < employeeArray.length; i++) {
-        output += "<tr><td>" + employeeA[i].id + "</td>" +
-                      "<td>" + employeeA[i].firstName + "</td>" +
-                      "<td>" + employeeA[i].lastName + "</td>" +
-                      "<td>" + employeeA[i].title + "</td></tr>";
-    }
+    for (var i = 0; i < employees.length; i++){
+        output += "<tr><td>" + employees[i].id + "</td>" +
+                      "<td>" + employees[i].firstName + "</td>" +
+                      "<td>" + employees[i].lastName + "</td>" +
+                      "<td>" + employees[i].title + "</td></tr>";
+        }
         output += "</tbody></table>";
     // innerHTML call
     document.getElementById("emps").innerHTML = output;
